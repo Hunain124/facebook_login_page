@@ -1,0 +1,150 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+}
+.main{
+    height:100vh;
+    background-color: #F1F2F6;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 50vh;
+    padding: 20px;
+    justify-content: center;
+}
+.left h1{
+    color: #1977F0;
+    font-size: 64px;
+}
+.left p{
+    width: 70%;
+    color: #070909;
+    font-size: 20px;
+}
+
+.right{
+    width: 35%;
+    height: 60vh;
+    background-color: white;
+    box-shadow: 5px 10px 8px #888888;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.right form{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    border-bottom: 1px solid rgba(66, 62, 62, 0.411);;
+    
+}
+.right form input{
+    padding: 10px;
+    border: 1px solid rgba(66, 62, 62, 0.411);
+    border-radius: 5px;
+}
+.right form .one{
+    background-color: #1878F3;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 10px;
+}
+.right form .one:hover{
+    color: black; 
+}
+.right form .two{
+    background-color: #1877f300;
+    border-radius: 10px;
+    margin-top: -15px;
+    color: #1878F3;
+    font-size: 14px;
+    border: none;
+    padding: 10px;
+}
+.right form .two:hover{
+    color: black; 
+}
+.right .three{
+    background-color: #42B72A;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    border: none;
+    padding: 10px;
+    width: 50%;
+    transform: translateX(50%);
+}
+.right .three:hover{
+    color: black;
+    background-color: #1878F3; 
+}
+@media (max-width :1024px) {
+    .main{
+        gap: 0px;
+    }
+    .right{
+        height: 55vh;
+        width: 35%;
+    }
+    .right .three{
+        font-size: 14px;
+        padding: 8px; 
+        width: 70%;
+        transform: translateX(20%);       
+    }
+}
+@media (max-width: 768px) {
+    .left{
+        width: 50%;
+    }
+    .right{
+        width: 40%;
+    }
+}
+@media (max-width: 425px) {
+    .main{
+        flex-wrap: wrap;
+        /* height: 120vh; */
+    }
+.left{
+    width: 100%;
+    
+}
+.left p ,h1{
+    text-align: center;
+    width: 100%;
+}
+.right{
+    width: 65%;
+    margin-top: -50px;
+}
+}
+@media (max-width: 375px) {
+
+.right{
+    width: 75%;
+    margin-top: -50px;
+}
+}
+@media (max-width: 320px) {
+
+    .right{
+        width: 80%;
+        margin-top: -50px;
+    }
+    }
